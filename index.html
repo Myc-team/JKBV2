@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户体验监控平台</title>
+    <link rel="stylesheet" href="public/less/reset.css">
+    <link rel="stylesheet" href="public/less/index.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="views/conmponents/allgroup/AllGroup.css">
+</head>
+<body ng-app="App">
+   <div class="w">
+       <!--headerB-->
+       <div class="header" ng-controller="head">
+           <div class="nav clearfix">
+               <div class="navLeft fl">
+                   <h1><i></i>用户体验监控平台</h1>
+                   <ul>
+                       <li ><a href="Javascript:;" ng-click="active(4)" ng-class="{active: key===4}">网页性能监控</a><b></b><i></i></li>
+                       <li ng-repeat="(index,list) in nav"><a href="Javascript:;" ng-click="active(index)" ng-class="{active: key===index}">{{list.text}}</a><i></i></li>
+                   </ul>
+               </div>
+               <div class="navRight fr">
+                   <a href="Javascript:;"><i class="icon1"></i></a>
+                   <a href="Javascript:;"><i class="icon2"></i></a>
+                   <a href="Javascript:;"><i class="icon3"></i></a>
+                   <a href="Javascript:;"><i class="icon4"></i></a>
+               </div>
+           </div>
+       </div>
+       <!--headerE-->
+       <!--mainB-->
+       <div class="main">
+           <!--侧边栏-->
+           <div class="aside fl" ng-controller="asideCtl">
+               <ul  ng-class="{active: flag}">
+                   <li ng-repeat="(index, list) in aside"><a href="{{list.link}}" ng-click="changetoggle(index)" ng-class="{active: index===key}"><i class="{{list.icon}}"></i>{{list.text}}</a></li>
+               </ul>
+           </div>
+           <!--数据展示-->
+           <div  class="datashow fr" ng-class="{active: flag}">
+               <!--<div ng-view></div>-->
+               <div class="dataNav">
+                   <div class="dataGroup"></div>
+                   <div class="dataTime"></div>
+               </div>
+               <div ng-view></div>
+           </div>
+       </div>
+       <!--mainE-->
+   </div>
+</body>
+</html>
+<script src="public/libs/angular.min.js"></script>
+<script src="public/libs/angular-route.js"></script>
+<script src="script/index.js"></script>

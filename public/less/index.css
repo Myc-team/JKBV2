@@ -1,0 +1,155 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background-image: url('../images/bkg.png');
+  padding: 16px;
+}
+/*头部*/
+.header {
+  height: 55px;
+  background: url("../images/botsplit.png") 0 46px no-repeat;
+  /*导航*/
+}
+.header .navLeft {
+  height: 55px;
+  line-height: 55px;
+}
+.header .navLeft h1 {
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  margin-right: 30px;
+}
+.header .navLeft h1 > i {
+  width: 26px;
+  height: 19px;
+  background: url("../images/logo.png") no-repeat;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.header .navLeft ul {
+  float: left;
+  display: inline-block;
+}
+.header .navLeft ul li {
+  float: left;
+}
+.header .navLeft ul li:first-child a:first-child {
+  width: 130px;
+}
+.header .navLeft ul li a {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  height: 56px;
+}
+.header .navLeft ul li a:hover {
+  background: url("../images/bkgselectedbtm.png") center 52px no-repeat;
+}
+.header .navLeft ul li a.active {
+  color: #65d2ef;
+  background: url("../images/bkgselectedbtm.png") center 52px no-repeat;
+}
+.header .navLeft ul li i {
+  width: 15px;
+  height: 28px;
+  vertical-align: middle;
+  background: url("../images/sprite.png") -30px -80px no-repeat;
+}
+.header .navLeft ul li b {
+  margin-right: 20px;
+  width: 8px;
+  height: 6px;
+  vertical-align: middle;
+  background: url("../images/sprite.png") -30px -28px no-repeat;
+}
+.header .navRight {
+  height: 55px;
+  width: 208px;
+  line-height: 55px;
+}
+.header .navRight a {
+  display: inline-block;
+  height: 55px;
+  width: 48px;
+  text-align: center;
+}
+.header .navRight a i {
+  width: 16px;
+  height: 16px;
+}
+.header .navRight a .icon1 {
+  background: url('../images/sprite.png') -60px -20px no-repeat;
+}
+.header .navRight a .icon2 {
+  background: url('../images/sprite.png') 0px -20px no-repeat;
+}
+.header .navRight a .icon3 {
+  background: url('../images/sprite.png') -60px -80px no-repeat;
+}
+.header .navRight a .icon4 {
+  background: url('../images/sprite.png') 0px -80px no-repeat;
+}
+/*主体*/
+.main {
+  margin-top: 10px;
+  /*侧边栏*/
+  /*数据呈现*/
+}
+.main .aside ul {
+  overflow: hidden;
+}
+.main .aside ul.active {
+  width: 23px;
+}
+.main .aside ul li a {
+  font-size: 12px;
+  display: inline-block;
+  width: 75px;
+  height: 54px;
+  line-height: 54px;
+}
+.main .aside ul li a:hover {
+  color: rgba(255, 255, 255, 0.4);
+  background: url('../images/bkgselected.png') right -1px no-repeat;
+}
+.main .aside ul li a.active {
+  background: url('../images/bkgselected.png') right -1px no-repeat;
+}
+.main .aside ul li a i {
+  display: inline-block;
+  width: 16px;
+  height: 16PX;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+.main .aside ul li a .icon1 {
+  background: url('../images/sprite.png') -30px 0 no-repeat;
+}
+.main .aside ul li a .icon2 {
+  background: url('../images/sprite.png') 0 -60px no-repeat;
+}
+.main .aside ul li a .icon3 {
+  background: url('../images/sprite.png') -60px -60px no-repeat;
+}
+.main .aside ul li a .icon4 {
+  background: url('../images/sprite.png') -60px 0 no-repeat;
+}
+.main .aside ul li a .icon5 {
+  background: url('../images/sprite.png') -60px -40px no-repeat;
+}
+.main .aside ul li a .icon6 {
+  background: url('../images/sprite.png') 0 -40px no-repeat;
+}
+.main .aside ul li a .icon7 {
+  background: url('../images/sprite.png') no-repeat;
+}
+.main .datashow {
+  width: 1150px;
+  height: 600px;
+}
+.main .datashow.active {
+  width: 1250px;
+}
