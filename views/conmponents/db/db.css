@@ -1,0 +1,77 @@
+.db {
+  padding-bottom: 20px;
+}
+.db .dbtop {
+  height: 140px;
+  position: relative;
+}
+.db .dbtop .searachsel {
+  margin: 15px 0 0 5px;
+  width: 100%;
+  height: 115px;
+  background: url("../../../public/images/searchsetbkg.png") -15px 0 no-repeat;
+}
+.db .dbtop .searachsel .seasp {
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 0 0 30px;
+}
+.db .dbtop .searachsel ul {
+  margin: 20px 0 0 30px;
+  font-size: 12px;
+}
+.db .dbtop .searachsel ul .selb {
+  display: inline-block;
+  font-size: 14px;
+  width: 90px;
+  background: url("../../../public/images/sel1.png") no-repeat;
+}
+.db .dbtop .searachsel ul .selb span {
+  display: inline-block;
+  height: 35px;
+}
+.db .dbtop .searachsel ul .selb .selsec {
+  width: 32px;
+  text-align: center;
+}
+.db .dbtop .searachsel ul li,
+.db .dbtop .searachsel ul i {
+  height: 35px;
+  line-height: 35px;
+}
+.db .dbtop .searachsel ul li:first-child {
+  width: 155px;
+}
+.db .dbtop .searachsel ul li:first-child i {
+  width: 56px;
+}
+.db .dbtop .searachsel ul li:first-child b {
+  width: 8px;
+  height: 6px;
+  background: url(../../../public/images/sprite.png) -30px -28px no-repeat;
+}
+.db .dbtop .searachsel ul li:nth-child(2) {
+  width: 386px;
+}
+.db .dbtop .searachsel ul li:nth-child(2) i {
+  width: 152px;
+  background: url("../../../public/images/sel2.png") no-repeat;
+}
+.db .dbtop .searachsel ul li:nth-child(2) b {
+  width: 8px;
+  height: 2px;
+  background: url("../../../public/images/linesplit.png") no-repeat;
+}
+.db .dbtop .searachsel ul li:last-child button {
+  width: 70px;
+  height: 35px;
+  margin: -5px 15px 0 0;
+  background: #697c98;
+  border-radius: 5px;
+}
+.db .firstScreen {
+  width: 100%;
+  height: 400px;
+  font-size: 14px;
+  background: url("../../../public/images/spsjtj.png") no-repeat;
+}

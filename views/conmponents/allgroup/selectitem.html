@@ -1,0 +1,9 @@
+<div class="dataGroup">
+    <div ng-click="itemshow()">
+        <span class="dataitem">{{selecttask}}</span>
+        <span class="selicon"><i></i></span>
+    </div>
+    <ul class="dropdown-menu" ng-show="togitem">
+        <li ng-repeat="(index,list) in tasklists" ng-click="itemvalue(tasklists[index].name)"><a href="javascript:void(0)" data-taskid="{{list.id}}">{{list.name}}</a></li>
+    </ul>
+</div>

@@ -1,0 +1,50 @@
+.ys {
+  padding-bottom: 20px;
+}
+.ys .ystop {
+  height: 140px;
+  position: relative;
+}
+.ys .ystop .searachsel {
+  margin: 15px 0 0 5px;
+  width: 100%;
+  height: 115px;
+  background: url("../../../public/images/searchsetbkg.png") -15px 0 no-repeat;
+}
+.ys .ystop .searachsel .seasp {
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 0 0 30px;
+}
+.ys .ystop .searachsel li {
+  float: left;
+  width: 190px;
+  height: 75px;
+  margin-left: 15px;
+  background: url("../../../public/images/ysiconsmall.png") no-repeat, url("../../../public/images/juxing.png") 0 center no-repeat;
+}
+.ys .ysmid li {
+  float: left;
+  width: 170px;
+  height: 130px;
+}
+.ys .ysmid li i {
+  height: 95px;
+  width: 1px;
+  vertical-align: middle;
+  background: url("../../../public/images/ysicon6.png") no-repeat;
+}
+.ys .ysbottom {
+  background: url('../../../public/images/ysbtbg.png') no-repeat;
+  height: 1110px;
+}
+.ys .ysbottom .ysbotmid li {
+  float: left;
+  width: 210px;
+  height: 100px;
+  margin-left: 15px;
+  background: url("../../../public/images/ysicon6.png") no-repeat, url("../../../public/images/ysicon2.png") no-repeat;
+}
+.ys .ysbottom .ysbotmid li:first-child {
+  background: url("../../../public/images/ysicon6.png") no-repeat, url("../../../public/images/ysicon3.png") no-repeat;
+}

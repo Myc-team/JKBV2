@@ -1,10 +1,10 @@
-html,
 body {
-  height: 100%;
-}
-body {
-  background-image: url('../images/bkg.png');
+  background: url('../images/bkg.png') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   padding: 16px;
+  min-width: 1280px;
 }
 /*头部*/
 .header {
@@ -45,25 +45,29 @@ body {
   width: 80px;
   height: 56px;
 }
-.header .navLeft ul li a:hover {
+.header .navLeft ul li a:hover,
+.header .navLeft ul li a.active {
   background: url("../images/bkgselectedbtm.png") center 52px no-repeat;
 }
 .header .navLeft ul li a.active {
   color: #65d2ef;
-  background: url("../images/bkgselectedbtm.png") center 52px no-repeat;
+}
+.header .navLeft ul li i,
+.header .navLeft ul li b {
+  background: url("../images/sprite.png") no-repeat;
 }
 .header .navLeft ul li i {
   width: 15px;
   height: 28px;
   vertical-align: middle;
-  background: url("../images/sprite.png") -30px -80px no-repeat;
+  background-position: -30px -80px;
 }
 .header .navLeft ul li b {
   margin-right: 20px;
   width: 8px;
   height: 6px;
   vertical-align: middle;
-  background: url("../images/sprite.png") -30px -28px no-repeat;
+  background-position: -30px -28px;
 }
 .header .navRight {
   height: 55px;
@@ -76,21 +80,31 @@ body {
   width: 48px;
   text-align: center;
 }
+.header .navRight a:hover .icon1 {
+  background-position: -60px -20px;
+}
+.header .navRight a:hover .icon2 {
+  background-position: 0 -20px;
+}
+.header .navRight a:hover .icon4 {
+  background-position: 0 -80px;
+}
 .header .navRight a i {
   width: 16px;
   height: 16px;
+  background: url('../images/sprite.png') no-repeat;
 }
 .header .navRight a .icon1 {
-  background: url('../images/sprite.png') -60px -20px no-repeat;
+  background-position: -116px -75px;
 }
 .header .navRight a .icon2 {
-  background: url('../images/sprite.png') 0px -20px no-repeat;
+  background-position: -88px -100px;
 }
 .header .navRight a .icon3 {
-  background: url('../images/sprite.png') -60px -80px no-repeat;
+  background-position: -60px -80px;
 }
 .header .navRight a .icon4 {
-  background: url('../images/sprite.png') 0px -80px no-repeat;
+  background-position: -116px -100px;
 }
 /*主体*/
 .main {
@@ -110,13 +124,40 @@ body {
   width: 75px;
   height: 54px;
   line-height: 54px;
-}
-.main .aside ul li a:hover {
   color: rgba(255, 255, 255, 0.4);
+}
+.main .aside ul li a:hover,
+.main .aside ul li a.active {
+  color: #ffffff;
   background: url('../images/bkgselected.png') right -1px no-repeat;
 }
-.main .aside ul li a.active {
-  background: url('../images/bkgselected.png') right -1px no-repeat;
+.main .aside ul li a:hover .icon1,
+.main .aside ul li a.active .icon1 {
+  background-position: -30px 0;
+}
+.main .aside ul li a:hover .icon2,
+.main .aside ul li a.active .icon2 {
+  background-position: 0 -60px;
+}
+.main .aside ul li a:hover .icon3,
+.main .aside ul li a.active .icon3 {
+  background-position: -60px -60px;
+}
+.main .aside ul li a:hover .icon4,
+.main .aside ul li a.active .icon4 {
+  background-position: -60px 0;
+}
+.main .aside ul li a:hover .icon5,
+.main .aside ul li a.active .icon5 {
+  background-position: -60px -40px;
+}
+.main .aside ul li a:hover .icon6,
+.main .aside ul li a.active .icon6 {
+  background-position: 0 -40px;
+}
+.main .aside ul li a:hover .icon7,
+.main .aside ul li a.active .icon7 {
+  background-position: 0 0;
 }
 .main .aside ul li a i {
   display: inline-block;
@@ -124,32 +165,85 @@ body {
   height: 16PX;
   vertical-align: middle;
   margin-right: 7px;
+  background: url('../images/sprite.png') no-repeat;
 }
 .main .aside ul li a .icon1 {
-  background: url('../images/sprite.png') -30px 0 no-repeat;
+  background-position: -88px -80px;
 }
 .main .aside ul li a .icon2 {
-  background: url('../images/sprite.png') 0 -60px no-repeat;
+  background-position: -88px 0;
 }
 .main .aside ul li a .icon3 {
-  background: url('../images/sprite.png') -60px -60px no-repeat;
+  background-position: -88px -50px;
 }
 .main .aside ul li a .icon4 {
-  background: url('../images/sprite.png') -60px 0 no-repeat;
+  background-position: -88px -25px;
 }
 .main .aside ul li a .icon5 {
-  background: url('../images/sprite.png') -60px -40px no-repeat;
+  background-position: -116px -50px;
 }
 .main .aside ul li a .icon6 {
-  background: url('../images/sprite.png') 0 -40px no-repeat;
+  background-position: -116px -25px;
 }
 .main .aside ul li a .icon7 {
-  background: url('../images/sprite.png') no-repeat;
+  background-position: -116px 0;
 }
 .main .datashow {
   width: 1150px;
-  height: 600px;
+  /*运营商*/
 }
 .main .datashow.active {
   width: 1250px;
+}
+.main .datashow.active .datapage .pageu {
+  margin: 15px 16px 0 16px;
+}
+.main .datashow .datapage .pageu {
+  margin: 15px 12px 0 0 ;
+  width: 275px;
+  height: 275px;
+  border-radius: 5px;
+  background: url("../images/pagedatabg.png") -16px 0 no-repeat;
+}
+.main .datashow .datapage .pageu:last-child {
+  margin-right: 0;
+}
+.main .datashow .mainBot .wdmap {
+  width: 850px;
+  height: 576px;
+  background: url("../images/fontpage.png") 0 16px no-repeat;
+  position: relative;
+}
+.main .datashow .mainBot .wdmap > .first {
+  display: inline-block;
+  font-size: 14px;
+  position: absolute;
+  top: 15px;
+}
+.main .datashow .mainBot .wdmap .back {
+  width: 48px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: none;
+  font-size: 14px;
+  position: absolute;
+  top: 45px;
+  background: #697c98;
+  border-radius: 5px;
+}
+.main .datashow .mainBot .wdmap .wdpmaprotate {
+  position: absolute;
+  top: -48px;
+  left: 20px;
+  transform: rotateX(30deg);
+}
+.main .datashow .mainBot .ope {
+  width: 275px;
+  height: 175px;
+}
+.main .datashow .mainBot .opera {
+  margin-top: 20px;
+  position: relative;
+  width: 275px;
 }

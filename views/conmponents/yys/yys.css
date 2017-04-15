@@ -1,0 +1,149 @@
+.yys {
+  padding-bottom: 20px;
+}
+.yys .yystop {
+  height: 140px;
+  position: relative;
+}
+.yys .yystop .searachsel {
+  margin: 15px 0 0 5px;
+  width: 100%;
+  height: 115px;
+  background: url("../../../public/images/searchsetbkg.png") -15px 0 no-repeat;
+}
+.yys .yystop .searachsel .seasp {
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 0 0 30px;
+}
+.yys .yystop .searachsel ul {
+  margin: 20px 0 0 30px;
+  font-size: 12px;
+}
+.yys .yystop .searachsel ul .selb {
+  display: inline-block;
+  font-size: 14px;
+  width: 90px;
+  background: url("../../../public/images/sel1.png") no-repeat;
+}
+.yys .yystop .searachsel ul .selb span {
+  display: inline-block;
+  height: 35px;
+}
+.yys .yystop .searachsel ul .selb .selsec {
+  width: 32px;
+  text-align: center;
+}
+.yys .yystop .searachsel ul li,
+.yys .yystop .searachsel ul i {
+  height: 35px;
+  line-height: 35px;
+}
+.yys .yystop .searachsel ul li:first-child {
+  width: 155px;
+}
+.yys .yystop .searachsel ul li:first-child i {
+  width: 56px;
+}
+.yys .yystop .searachsel ul li:first-child b {
+  width: 8px;
+  height: 6px;
+  background: url(../../../public/images/sprite.png) -30px -28px no-repeat;
+}
+.yys .yystop .searachsel ul li:nth-child(2) {
+  width: 386px;
+}
+.yys .yystop .searachsel ul li:nth-child(2) i {
+  width: 152px;
+  background: url("../../../public/images/sel2.png") no-repeat;
+}
+.yys .yystop .searachsel ul li:nth-child(2) b {
+  width: 8px;
+  height: 2px;
+  background: url("../../../public/images/linesplit.png") no-repeat;
+}
+.yys .yystop .searachsel ul li:last-child button {
+  width: 70px;
+  height: 35px;
+  margin: -5px 15px 0 0;
+  background: #697c98;
+  border-radius: 5px;
+}
+.yys .firstScreen {
+  width: 100%;
+  height: 400px;
+  font-size: 14px;
+  background: url("../../../public/images/spsjtj.png") no-repeat;
+  padding: 15px;
+}
+.yys .yysdata {
+  width: 100%;
+  height: 400px;
+  background: url("../../../public/images/yysbtmbkg.png") no-repeat;
+  padding-top: 13px;
+}
+.yys .table.table-blue{
+  width:95%;
+  margin:auto;
+  border: 1px solid #323D48;
+}
+.yys .table.table-blue thead tr th {
+  background: #37414C;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #323D48;
+  height:25px;
+  padding: 5px 5px;
+  font-size: 12px;
+}
+.yys .table.table-blue tbody tr td {
+  background: #293137;
+  color: #ccc;
+  text-align: center;
+  border: 1px solid #323D48;
+  height:25px;
+  line-height: 1.5;
+  padding: 2px 2px;
+  font-family: "Microsoft YaHei", "Helvetica";
+  font-size: 12px;
+}
+.page-content {
+  width: 1090px;
+  /*float: right;*/
+  /*margin: auto;*/
+}
+.page-content .dropdown {
+  margin-right: 14px;
+  width: 1000px;
+}
+.page-content .dropdown li {
+  width: 20px;
+  float:right;
+}
+.page-content.dropdown .page-content>nav {
+  display: inline-block;
+}
+.page-content.dropdown .dropup {
+  position: relative;
+}
+.page-content.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}

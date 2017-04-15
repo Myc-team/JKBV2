@@ -1,4 +1,11 @@
 <div class="dataSelect">
-    <span class="allsel">全部分组</span>
-    <span class="selicon"><i></i></span>
+    <div  ng-click="toggleGroup()">
+        <span class="allsel">{{allgroup}}</span>
+        <span class="selicon"><i></i></span>
+    </div>
+    <ul ng-show="toggroup">
+        <li ng-repeat="(index,list) in allgrouplist" ng-click="groupvalue(allgrouplist[index].name)">
+            <a href="">{{list.name}}</a>
+        </li>
+    </ul>
 </div>

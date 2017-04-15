@@ -1,0 +1,45 @@
+.kyx {
+  padding-bottom: 20px;
+}
+.kyx .kyxtop {
+  height: 140px;
+  position: relative;
+}
+.kyx .kyxtop .searachsel {
+  margin: 15px 0 0 5px;
+  width: 100%;
+  height: 115px;
+  background: url("../../../public/images/searchsetbkg.png") -15px 0 no-repeat;
+}
+.kyx .kyxtop .searachsel .seasp {
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 0 0 30px;
+}
+.kyx .kyxbottom {
+  background: url('../../../public/images/kyxbtbkg.png') no-repeat;
+  height: 955px;
+}
+
+.kyx .table.table-blue{
+    width:90%;
+    margin: 5px 5px 10px 10px;
+    border: 1px solid #323D48;
+}
+.kyx .table.table-blue thead tr th {
+    background: #37414C;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #323D48;
+    height:25px;
+    padding: 5px 5px;
+}
+.kyx .table.table-blue tbody tr td {
+    background: #293137;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #323D48;
+    height:20px;
+    line-height: 1.5;
+    padding: 2px 2px;
+}
